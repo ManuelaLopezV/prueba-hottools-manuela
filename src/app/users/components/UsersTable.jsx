@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import {
   Table,
   TableBody,
@@ -11,16 +10,11 @@ import {
   Paper,
   Box,
   Typography,
-  TextField,
   Button,
-  AppBar,
-  Toolbar,
-  IconButton,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { useTheme } from "@mui/material/styles";
 import { Edit, Delete, Logout } from "@mui/icons-material";
-import { Header } from "@/components/Header";
 
 // Estilos personalizados para la tabla de usuarios
 const StyledTableContainer = styled(TableContainer)(({ theme }) => ({
