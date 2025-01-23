@@ -80,14 +80,14 @@ const UsersTable = ({ users, deleteUser, editUser }) => {
             [theme.breakpoints.up("xl")]: { mt: 5, mb: 4 },
           }}
         >
-          Tabla de Usuarios
+          Tabla de Mascotas
         </Typography>
         <StyledTableContainer component={Paper}>
           <Table>
             <TableHead>
               <TableRow>
                 <HeaderTableCell>Nombre</HeaderTableCell>
-                <HeaderTableCell>Apellido</HeaderTableCell>
+                <HeaderTableCell>Especie</HeaderTableCell>
                 <HeaderTableCell>Correo Electrónico</HeaderTableCell>
                 <HeaderTableCell>Edad</HeaderTableCell>
                 <HeaderTableCell>Acciones</HeaderTableCell>
@@ -99,7 +99,7 @@ const UsersTable = ({ users, deleteUser, editUser }) => {
                   <StyledTableCell>{user.name}</StyledTableCell>
                   <StyledTableCell>{user.lastname}</StyledTableCell>
                   <StyledTableCell>{user.email}</StyledTableCell>
-                  <StyledTableCell>{user.age}</StyledTableCell>
+                  <StyledTableCell>{user.age} años</StyledTableCell>
                   <StyledTableCell>
                     <Button
                       onClick={() => editUser(index)}

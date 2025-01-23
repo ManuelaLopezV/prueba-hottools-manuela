@@ -17,7 +17,7 @@ export default function Home() {
     >
       <Box sx={{ textAlign: "center" }}>
         <Typography variant="h3" gutterBottom>
-          Prueba Manuela López
+          Happy Pets 🐶
         </Typography>
       </Box>
       <Box
@@ -33,7 +33,7 @@ export default function Home() {
       >
         <Box
           sx={{
-            mt: 5,
+            mt: 2,
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
@@ -45,12 +45,12 @@ export default function Home() {
             gutterBottom
             sx={{ textAlign: "center", fontWeight: "bold" }}
           >
-            Bienvenidos a mi prueba técnica
+            Bienvenidos a mi proyecto de gestión de mascotas de una veterinaria.
           </Typography>
           <Typography
             variant="h6"
             gutterBottom
-            sx={{ mt: 5, textAlign: "center" }}
+            sx={{ mt: 4, textAlign: "center" }}
           >
             Para continuar debes presionar el botón que dirige al inicio de
             sesión.

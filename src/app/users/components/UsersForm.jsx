@@ -29,7 +29,7 @@ const UsersForm = ({
           [theme.breakpoints.up("xl")]: { mt: 5, mb: 5 },
         }}
       >
-        Agregar Usuarios
+        Agregar Mascotas
       </Typography>
       <Box sx={{ display: "flex", flexDirection: "column" }}>
         <TextField
@@ -40,7 +40,7 @@ const UsersForm = ({
           size="small"
         />
         <TextField
-          placeholder="Apellido"
+          placeholder="Especie"
           value={newUser.lastname}
           onChange={(e) => setNewUser({ ...newUser, lastname: e.target.value })}
           margin="dense"
@@ -92,7 +92,7 @@ const UsersForm = ({
               },
             }}
           >
-            Agregar Usuario
+            Agregar Mascota
           </Button>
         )}
       </Box>

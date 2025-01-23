@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { Box, Button, TextField, Typography } from "@mui/material";
 import InputAdornment from "@mui/material/InputAdornment";
 import PersonIcon from "@mui/icons-material/Person";
 import LockIcon from "@mui/icons-material/Lock";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import ImageLogin from "../../../../public/assets/login.svg";
 
 export default function LoginForm() {
   const [username, setUsername] = useState("");
@@ -44,7 +45,9 @@ export default function LoginForm() {
         }}
       >
         <Box sx={{ textAlign: "center", marginBottom: 3 }}>
-          <AccountCircleIcon sx={{ color: "#ffe0b2", fontSize: 130 }} />
+          <Box sx={{ marginBottom: 3 }}>
+            <Image src={ImageLogin} alt="User Login" width={180} height={180} />
+          </Box>
           <Typography variant="h5" sx={{ mt: 2, fontWeight: "bold" }}>
             Inicio de Sesión
           </Typography>

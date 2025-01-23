@@ -32,16 +32,16 @@ const UsersManagement = () => {
       // Mock de usuarios inicial
       const mockUsers = [
         {
-          name: "Diego",
-          lastname: "Jaramillo",
-          email: "diego-jara@gmail.com",
-          age: 24,
+          name: "Luna",
+          lastname: "Perro",
+          email: "andres88@gmail.com",
+          age: 2,
         },
         {
-          name: "Marcela",
-          lastname: "Restrepo",
+          name: "Pelusa",
+          lastname: "Gato",
           email: "marce-restrepo@gmail.com",
-          age: 33,
+          age: 4,
         },
       ];
       setUsers(mockUsers);
@@ -128,7 +128,7 @@ const UsersManagement = () => {
               [theme.breakpoints.up("xl")]: { mt: 8 },
             }}
           >
-            Gestión de Usuarios
+            Gestión de Happy Pets 🐶
           </Typography>
           <Box sx={{ display: "flex" }}>
             <UsersForm
